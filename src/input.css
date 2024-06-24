@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    header{
+        @apply flex justify-between items-center py-4 px-8 sm:px-20
+    }
+    nav{
+        @apply hidden sm:flex gap-6 items-center;
+    }
+    button{
+        @apply text-white bg-black py-2 px-4 uppercase text-xs;
+    }
+    a{
+        @apply text-[#82877D];
+    }
+    
+    a:hover{
+        @apply text-black;
+    }
+    .menu{
+        @apply sm:hidden text-xs;
+    }
+    .hero{
+        @apply sm:bg-[#2D2640] h-[70vh] bg-[#2D2640] sm:h-[70vh] flex flex-col-reverse sm:flex-row items-center px-8 sm:px-20 sm:gap-24
+    }
+    .insurance{
+        @apply text-[50px] text-center text-white font-bold leading-none sm:text-[75px] sm:text-left sm:w-[45vw]
+    }
+    .text{
+        @apply text-white text-[19px] w-[95vw] text-center sm:w-[42vw] sm:text-[18px] sm:text-left
+    }
+    .bhitb{
+        @apply flex flex-col gap-6
+    }
+    .h1pbutton{
+        @apply  bg-[#2D2640] h-[60vh] flex flex-col gap-5 items-center sm:items-start sm:h-[44vh]
+    }
+    .buttonhero{
+        @apply bg-white text-black font-semibold w-[30vw] sm:w-[13vw]
+    }
+    .intro-image {
+        @apply  w-[52vw] sm:w-[30vw] sm:relative top-[80px] 
+   }
+   section{
+    @apply py-5 gap-16 items-center sm:py-44 px-20 flex flex-col sm:gap-16 sm:items-start
+}
+.allprocess{
+    @apply flex flex-col gap-4 sm:flex-row sm:gap-10 items-center
+}
+.process{
+    @apply flex flex-col gap-6 items-center sm:items-start
+}
+.processimage{
+    @apply sm:w-[6vw] w-[20vw]
+}
+.our{
+    @apply text-[#82877D] sm:w-[25vw] w-[85vw] text-center sm:text-left font-bold
+}
+.ours{
+    @apply text-[#82877D] sm:w-[28vw]  w-[85vw] text-center sm:text-left font-bold
+}
+}
+.ourss{
+    @apply text-[#82877D] sm:w-[25vw]  w-[85vw] text-center sm:text-left font-bold
+} 
+
+.we{
+    @apply text-3xl sm:text-7xl font-bold 
+}
+h2{
+    @apply text-2xl font-bold
+}
+main{
+    @apply sm:px-20 sm:py-10 px-5 py-5
+}
+.mainh1b{
+    @apply bg-[#2D2640] flex items-center py-14 px-14 sm:justify-between flex-col sm:flex-row gap-7   
+}
+.mainh1b h2{
+    @apply text-white text-[45px] sm:w-[33vw] w-[90vw] text-center sm:text-left leading-normal
+}
+.mainh1b button{
+    @apply  sm:bg-white sm:text-black font-bold bg-[#2D2640] border border-white
+}
+.losm{
+@apply flex sm:justify-between px-20 sm:mt-16 flex-col gap-8 items-center sm:items-start sm:flex-row mt-28
+}
+.smedia{
+    @apply flex gap-4
+}
+footer{
+    @apply px-20 flex flex-col gap-8 sm:py-16 py-2
+}
+.chco{ 
+    @apply flex md:justify-between items-center flex-col gap-8 sm:flex-row 
+}
+.chco h3{
+    @apply font-bold uppercase text-[#82877D] tracking-widest text-center sm:text-left sm:text-xl text-2xl 
+}
+.questions{
+    @apply flex justify-between items-center
+}
+ .how{
+    @apply flex flex-col gap-4 text-center sm:text-left
+ }
+ .how p{
+    @apply font-bold uppercase sm:text-xs text-2xl
+ }
+ .how p:hover{
+    @apply underline cursor-pointer
+ }
+ .come{
+    @apply flex flex-col gap-6
+ }
+ h6{
+    @apply uppercase font-bold text-2xl
+ }
+ h6:hover{
+    @apply border-2 border-white py-2 px-20
+ }
+ 
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+   

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    
+</head>
+<body>
+   <header>
+    <img src="./images/logo.svg" alt="img">
+    <nav>
+        <a href="#">How we work</a>
+        <a href="#">Blog</a>
+        <a href="#"> Account</a>
+        <button>View plans</button>
+    </nav>
+    <button class="menu" id="hamb">&#x2630;</button>
+    <button class="menu hidden" id="hambc">&#x78;</button>
+    </header>
+    <div class="sm:hidden">
+        
+        <div class="hidden bg-[#2D2640] text-white flex-col gap-10 fixed top-16 text-center w-[100vw] py-10"  id="mobile">
+            <h6>how we work</h6>
+            <br>
+            <h6>blog</h6>
+            <br>
+            <h6>Account</h6>
+            <br>
+            <h6>View plans</h6>
+        </div>
+    </div>  
+   <img class="intro-image sm:hidden w-[100vw]" src="images/image-intro-desktop.jpg" alt="intro">
+   <div class="hero">
+    <div class="bhitb">
+        <div class="sm:border-t-2 border-white w-[10vw]" ></div>
+        <div class="h1pbutton">
+            <h1 class="insurance"> Humanizing your insurance.</h1>
+            <p class="text">Get your life insurance coverage easier and faster. We blend our expertise 
+                and technology to help you find the plan that’s right for you. Ensure you 
+                and your loved ones are protected.</p>
+            <button class="buttonhero"> View plans</button>
+        </div>
+    </div>
+    <img class="intro-image hidden sm:flex" src="images/image-intro-desktop.jpg" alt="intro">
+    
+    </div>
+    <section>
+        <div class="border-t-4 w-[30vw] border sm:w-[10vw]"></div>
+        <h1 class="we">We’re different</h1>
+        <div class="allprocess">
+            <div class="process">
+                <img class="processimage" src="./images/icon-snappy-process.svg" alt="Snappy">
+                <h2>Snappy Process</h2>
+                <p class="our"> Our application process can be completed in minutes, not hours. Don’t get 
+                    stuck filling in tedious forms.</p>
+            </div>
+            <div class="process" >
+                <img class="processimage"  src="./images/icon-affordable-prices.svg" alt="Affordable">
+                <h2>  Affordable Prices</h2>
+                <p class="ours">We don’t want you worrying about high monthly costs. Our prices may be low, 
+                    but we still offer the best coverage possible.</p>
+            </div>
+            <div class="process" >
+                <img class="processimage"  src="./images/icon-people-first.svg" alt="People">
+                <h2>People First</h2>
+                <p class="ourss">Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+                    sure you’re covered when you need it.</p>
+            </div>
+        </div>
+    </section>
+        <main>
+            <div class="mainh1b">
+                <h2 class="find"> Find out more about how we work</h2>
+                <button>How we work</button>  
+            </div>
+        </main>
+        <div class="losm">
+            <img src="./images/logo.svg" alt="lo">
+            <div class="smedia">
+                <a href="#"><img src="./images/icon-facebook.svg" alt="face"></a>
+                <a href="#"><img src="./images/icon-twitter.svg" alt="twi"></a>
+                <a href="#"><img src="./images/icon-pinterest.svg" alt="pin"></a>
+                <a href="#"><img src="./images/icon-instagram.svg" alt="inst"></a>
+            </div>
+     </div>
+     <div class="flex items-center justify-center mt-10 mb-10">
+        <div class="border-t-4 border w-[87vw]"></div>
+     </div>
+     <footer>
+          <div class="chco">
+            <div class="come">
+                <h3> our company</h3>
+                <div>
+                    <div class="how">
+                        <p>How we work</p>
+                        <p>Why Insure?</p>
+                        <p>View plans</p>
+                        <p>Reviews</p>
+                    </div>
+                </div>
+            </div>
+            <div class="come">
+                <h3>help</h3>
+                <div>
+                    <div class="how">
+                        <p>FAQ</p>
+                        <p>Terms of use</p>
+                        <p>Privacy policy</p>
+                        <p>Cookies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="come">
+                <h3>contact</h3>
+                <div>
+                    
+            <div class="how">
+                <p>Sales</p>
+                <p>Support</p>
+                <p>Live chat</p>
+                <p>Cookies</p>
+            </div>
+                </div>
+            </div>
+            <div class="come">
+                <h3>Others</h3>
+                <div>
+                    <div class="how">
+                        <p>Careers</p>
+                        <p>Press</p>
+                        <p>Licenses</p>
+                        <p>Cookies</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+          </div>
+          </footer>    
+          <script>
+            
+            
+            const navba = document.getElementById('hamb')
+            const mob =document.getElementById('mobile')
+            const closes= document.getElementById('hambc')
+            navba.addEventListener('click',()=>{
+                mob.classList.toggle('hidden')
+                if (mob.classList.contains('hidden')) {
+                    navba.classList.remove('hidden')
+                    closes.classList.add('hidden')
+                }
+                else{
+                    navba.classList.add('hidden')
+                    closes.classList.remove('hidden')
+                }
+                closes.addEventListener('click',()=>{
+                    mob.classList.toggle('hidden')
+                    if (mob.classList.contains('hidden')) {
+                        navba.classList.remove('hidden')
+                        closes.classList.add('hidden') 
+                    }
+                   
+                    
+                })
+            
+            })
+          </script>
+</body>
+</html>
